@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:background="#FF6EB4"
+                android:id="@+id/rl_menu_header"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_menu_header_icon"
+        android:clickable="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/bili_default_avatar"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="点击头像登录"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/civ_menu_header_icon"
+        android:layout_marginLeft="20dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:id="@+id/civ_menu_header_moon"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/civ_menu_header_moon_selector"/>
+
+</RelativeLayout>
